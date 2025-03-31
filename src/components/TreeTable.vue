@@ -34,7 +34,7 @@ const autoGroupColumnDef = ref({
 
 const colDefs = ref([
   { field: "id", hide: true },
-  { field: "parent" },
+  { field: "category" },
   { field: "label" }
 ])
 

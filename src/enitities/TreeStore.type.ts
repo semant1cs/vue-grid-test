@@ -1,12 +1,17 @@
+export type NodeId = {
+  id: number | string | null
+}
+
 export type TTreeNode = {
-  id: number | string
+  id: NodeId
   parent: number | string | null
   label: string | null
   path?: (string | number)[]
+  category?: "Группа" | "Элемент" | ''
 }
 
 export type TRawTreeNode = {
-  id: number | string
+  id: NodeId
   parent: number | string | null
   label: string | null
 }
